@@ -18,6 +18,9 @@ public interface IUserMapper {
     @Select("select *from users")
     public List<UsersInformation> getAllUsers();
 
+    @Select("select *from users_information where username=#{username}")
+    public List<UsersInformation> getUserInformationN(String username);
+
     /**
      *
      * @return
@@ -54,8 +57,7 @@ public interface IUserMapper {
     @Select("select *from users_information where accountId=#{accountId}")
     public UsersInformation getUserInformationById(int accountId);
 
-    @Select("select *from users_information where username=#{username}")
-    public List<UsersInformation> getUserInformationN(String username);
+
 
     @Select("select *from users_information")
     public List<UsersInformation> getAllUsersInf();

@@ -25,10 +25,11 @@ import java.util.List;
  */
 public class BUserInformationModle extends BaseBModle {
 
-    public List<UsersInformation> data;
+    List<UsersInformation> data;
 
-
-    public BUserInformationModle() {
+    public BUserInformationModle(int code, String msg, List<UsersInformation> data) {
+        super(code, msg);
+        this.data = data;
     }
 
     public BUserInformationModle(int code, String msg, int count, List<UsersInformation> data) {

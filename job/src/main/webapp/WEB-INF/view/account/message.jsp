@@ -44,7 +44,7 @@
 
 
     <table class="layui-table"
-           lay-data="{width: 1100, height:800, url:'http://localhost:8080/message/getAllMessage', page:true, id:'idTest'}"
+           lay-data="{width: 1100, height:800, url:'http://172.16.9.77:8080/message/getAllMessage', page:true, id:'idTest'}"
            lay-filter="demo">
         <thead>
         <tr>
@@ -92,7 +92,7 @@
 
                         $.ajax({
                             type: "post",
-                            url: "http://localhost:8080/message/deleteMyMessage",
+                            url: "http://172.16.9.77:8080/message/deleteMyMessage",
                             data: {
                                 username: data.username
                             },

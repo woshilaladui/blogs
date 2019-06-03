@@ -32,7 +32,7 @@
 <div class="login">
     <div class="message">博客系统后台登录</div>
     <div id="darkbannerwrap" class=""></div>
-    <form class="layui-form layui-form-pane formbox" action="http://localhost:8080/busers/login"
+    <form class="layui-form layui-form-pane formbox" action="http://172.16.9.77:8080/busers/login"
           method="post">
 
         <div class="layui-form-item" style="">

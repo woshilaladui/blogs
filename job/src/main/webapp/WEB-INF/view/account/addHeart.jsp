@@ -97,7 +97,7 @@
 
         var form = $(this);
         $.ajax({
-            url: "http://localhost:8080/heart/addHeart",
+            url: "http://172.16.9.77:8080/heart/addHeart",
             type: "post",
             data: form.serialize(),
             dataType: "json",

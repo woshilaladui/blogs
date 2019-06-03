@@ -23,8 +23,8 @@ package com.wust.job.modle;
  */
 public class BaseModle {
 
-    public int code;
-    public String msg;
+    public int code;//请求信息标记码
+    public String msg;//信息
     public int count;
 
     public BaseModle() {

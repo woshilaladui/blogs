@@ -31,6 +31,16 @@ public class BaseBModle {
     public BaseBModle() {
     }
 
+    public BaseBModle(int code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
+
+    public BaseBModle(int code, int count) {
+        this.code = code;
+        this.count = count;
+    }
+
     public BaseBModle(int code, String msg, int count) {
         this.code = code;
         this.msg = msg;

@@ -6,7 +6,7 @@
 
 			<!-- 头部区域（可配合layui已有的水平导航） -->
 			<ul class="layui-nav layui-layout-left">
-				<li class="layui-nav-item"><a href="http://localhost:8080/busers/homePage">主页</a></li>
+				<li class="layui-nav-item"><a href="http://172.16.9.77:8080/busers/homePage">主页</a></li>
 				<li class="layui-nav-item"><a href="javascript:;">信息管理</a>
 					<dl class="layui-nav-child">
 						<dd>
@@ -31,7 +31,7 @@
 						
 					</dl>
 				</li>
-				<li class="layui-nav-item"><a href="http://localhost:8080/busers/login">注销</a>
+				<li class="layui-nav-item"><a href="http://172.16.9.77:8080/busers/login">注销</a>
 				</li>
 			</ul>
 		</div>

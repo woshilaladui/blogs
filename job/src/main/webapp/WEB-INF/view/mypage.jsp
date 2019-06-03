@@ -252,7 +252,7 @@
     console.log("over.."+"asssssssssssssssssssss");
 
     $.ajax({
-        url:"http://localhost:8080/users/get",
+        url:"http://172.16.9.77:8080/users/get",
         type:"GET",
         dataType: "json",
         success:function(data){
