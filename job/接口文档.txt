@@ -1,0 +1,69 @@
+后台界面带请求路径
+http://localhost:8080/busers/homePage 								用户管理界面
+http://localhost:8080/busers/essayPage 								所有文章的界面
+http://localhost:8080/essay/addEssayPage							添加文章的界面
+http://localhost:8080/busers/heartPage 								心得管理界面
+http://localhost:8080/heart/addHeartPage 							添加心得界面
+http://localhost:8080/busers/writingPage 							书法管理界面
+http://localhost:8080/writing/addWritingPage 						添加书法界面
+http://localhost:8080/busers/messagePage 							站内消息管理界面
+http://localhost:8080/message/addMessagePage 						发送信息界面 login
+http://localhost:8080/busers/login   								后台登陆界面
+
+controler层的接口
+http://localhost:8080/busers/delete  								删除用户的接口
+
+http://localhost:8080/essay/getAllEssay  							得到所有的文章
+http://localhost:8080/essay/getUserEssay   							得到指定用户的文章
+http://localhost:8080/essay/addEssayPage  							后台添加文章的界面
+http://localhost:8080/essay/addEssay  								后台管理员添加文章的接口(只有admin用户才能访问)
+
+
+http://localhost:8080/group/getAllGroup 						    得到所有分组信息的接口
+http://localhost:8080/group/getMyGroup    							得到指定用户的分组信息的接口
+http://localhost:8080/group/deleteOneRealationship  				删除指定人的分组信息的接口
+
+
+
+http://localhost:8080/heart/getAllHeart   							得到所有人的心得的接口
+http://localhost:8080/heart/getMyHeart    							得到指定用户的心得的接口
+http://localhost:8080/heart/deleteMyHeart   						删除指定用户的心得
+
+
+http://localhost:8080/message/getAllMessage  						得到所有用户的聊天消息的接口
+http://localhost:8080/message/deleteMyMessage  						删除指定用户的聊天记录的接口
+http://localhost:8080/message/sendMessage   						给指定用户发起聊天的接口（只有admin给其他人发，在后台管理界面发起）
+
+
+
+http://localhost:8080/users/getUsers 		 						得到某个用户
+http://localhost:8080/users/register  								注册用户的接口
+http://localhost:8080/users/login     								用户登录的接口
+http://localhost:8080/users/getInformation  						得到用户详情信息的接口
+http://localhost:8080/users/updateUserInf   						得到全部用户信息
+http://localhost:8080/busers/getAllUserInf
+
+
+http://localhost:8080/writing/getMyWriting  得到指定用户的书法的接口
+http://localhost:8080/writing/getAllWriting  得到全部用户的书法的接口
+http://localhost:8080/writing/deleteOneWriting  删除指定用户的书法的接口
+http://localhost:8080/writing/addWriting  添加书法的接口（管理员用的）
+
+http://172.16.9.77:8080/busers/login
+
+数据库
+username root
+password zhengmeng001
+
+
+
+
+
+
+
+
+
+
+
+
+
