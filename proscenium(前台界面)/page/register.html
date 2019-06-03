@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/layui/css/layui.css">
+    <link href=".././css/register.css" rel="stylesheet"></head>
+
+    <body>
+        <div>
+            <header class="tmHeader">
+                <!-- logo -->
+                <a href="../index.html">
+                    <img src="data:image/png;base64,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" alt="" class="logoA">
+                </a>
+
+                <ul class="layui-nav">
+                    <li class="layui-nav-item iconfont icon-gengduo1">
+                        <!-- <i class="iconfont icon-gengduo1"></i> -->
+                        <a href="">作品分类</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="./goodComposition.html" class="iconfont icon-text_icon" style="width:145px;">优秀作文</a>
+                            </dd>
+                            <dd>
+                                <a href="./Handwriting.html" class="iconfont icon-text_icon" style="width:145px;">书法</a>
+                            </dd>
+                            <dd>
+                                <a href="./ListWorks.html" class="iconfont icon-text_icon" style="width:145px;">散文</a>
+                            </dd>
+                            <dd>
+                                <a href="./ListWorks.html" class="iconfont icon-text_icon" style="width:145px;">议论文</a>
+                            </dd>
+                            <dd>
+                                <a href="./ListWorks.html" class="iconfont icon-text_icon" style="width:145px;">国内名著</a>
+                            </dd>
+                            <dd>
+                                <a href="./ListWorks.html" class="iconfont icon-text_icon" style="width:145px;">国外名著</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./oeuvre.html">作品阅读</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./experience.html">写作互动</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./Handwriting.html">书写互动</a>
+
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./corpus.html" style="width: 150px;">作文语料库</a>
+                </li>
+            </ul>
+
+            <!-- 搜索 -->
+            <div class="search">
+                <input type="text" class="searchInput" placeholder="请输入搜索内容..">
+                <i class="iconfont icon-suosou searchShow"></i>
+                <i class="iconfont icon-suosou searchsuosou" style="display:none"></i>
+                <a href="./writeArticle.html">写文章</a>
+                <a href="./practiceCalligraphy.html">练书法</a>
+                <a href="login.html">登录</a>
+                <a href="register.html" class="clearBorder">注册</a>
+            </div>
+        </header>
+        <header class="btHeader" style="display:none;">
+            <!-- logo -->
+            <a href="/page/index.html">
+                <img src="data:image/png;base64,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" alt="" class="logoA">
+            </a>
+
+            <ul class="layui-nav">
+                <li class="layui-nav-item iconfont icon-gengduo1">
+                    <!-- <i class="iconfont icon-gengduo1"></i> -->
+                    <a href="" class="header-oneA">作品分类</a>
+                    <dl class="layui-nav-child erji">
+                        <dd>
+                            <a href="./Classification/StudentArtticle.html" class="iconfont icon-text_icon" style="width:145px;">优秀作文</a>
+                        </dd>
+                        <dd>
+                            <a href="" class="iconfont icon-text_icon" style="width:145px;">书法</a>
+                        </dd>
+                        <dd>
+                            <a href="" class="iconfont icon-text_icon" style="width:145px;">散文</a>
+                        </dd>
+                        <dd>
+                            <a href="" class="iconfont icon-text_icon" style="width:145px;">议论文</a>
+                        </dd>
+                        <dd>
+                            <a href="" class="iconfont icon-text_icon" style="width:145px;">国内名著</a>
+                        </dd>
+                        <dd>
+                            <a href="" class="iconfont icon-text_icon" style="width:145px;">国外名著</a>
+                        </dd>
+                    </dl>
+                </li>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">作品阅读</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="">写作互动</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">书写互动</a>
+
+            </li>
+            <li class="layui-nav-item">
+                <a href="" style="width: 150px;">作文语料库</a>
+            </li>
+        </ul>
+
+        <!-- 搜索 -->
+        <div class="search">
+            <input type="text" class="searchInput" placeholder="请输入搜索内容..">
+            <i class="iconfont icon-suosou searchShow"></i>
+            <i class="iconfont icon-suosou searchsuosou" style="display:none"></i>
+            <a href="/page/login.html">登录</a>
+            <a href="/page/register.html" class="clearBorder">注册</a>
+        </div>
+
+    </header>
+</div>
+
+<div class="register-box">
+    <img src="../img/500465307.d743163.png" alt="" class="register-bg">
+    <div class="login-box" style="height:585px;">
+    </div>
+    <div class="login-smBox" style="height:562px">
+        <div class="login-title">注册</div>
+        <form id="myform"  class="layui-form">
+            <ul class="login-ul">
+                <li>
+                    <span>用&emsp;户&emsp;名&emsp;:</span>
+                    <input type="text" id="username" name="username" placeholder="请输入用户名">
+                </li>
+
+                <li class="register-dxk register-js">
+                    <span>角&emsp;色:</span>
+                    <div class="layui-input-block">
+                        <input type="radio" name="role" value="老师" title="老师" checked="">
+                        <input type="radio" name="role" value="学生" title="学生">
+                    </div>
+                </li>
+                <li>
+                    <span>姓&emsp;名:</span>
+                    <input id="nickName" name="nickName" type="text" placeholder="请输入姓名">
+                </li>
+                <li class="register-dxk">
+                    <span>性&emsp;别:</span>
+                    <div class="layui-input-block">
+                        <input type="radio" name="sex" value="男" title="男" checked="">
+                        <input type="radio" name="sex" value="女" title="女">
+                    </div>
+                </li>
+                <li>
+                    <span>邮&emsp;箱:</span>
+                    <input id="mail" name="mail" type="text" placeholder="请输入姓名">
+                </li>
+                <li>
+                    <span>密&emsp;码:</span>
+                    <input name="password" type="password" placeholder="请输入密码">
+                </li>
+                <li>
+                   <button>注册</button>
+
+               </li>
+           </ul>
+       </form>
+   </div>
+</div>
+
+<footer>
+    <ul class="footer-oneUl">
+        <li class="footer-oneLi">
+            平台介绍
+            <ul class="footer-twoUl">
+                <li class="footer-twoLi">
+                    <a href="#">平台介绍</a>
+                </li>
+                <li class="footer-twoLi">
+                    <a href="#">联系我们</a>
+                </li>
+            </ul>
+        </li>
+        <li class="footer-oneLi">
+            平台动态
+            <ul class="footer-twoUl">
+                <li class="footer-twoLi">
+                    <a href="#">动态新闻</a>
+                </li>
+                <li class="footer-twoLi">
+                    <a href="#">平台活动</a>
+                </li>
+            </ul>
+        </li>
+        <li class="footer-oneLi">
+            优秀作品
+            <ul class="footer-twoUl">
+                <li class="footer-twoLi">
+                    <a href="#">优秀作文</a>
+                </li>
+                <li class="footer-twoLi">
+                    <a href="#">优秀书法</a>
+                </li>
+            </ul>
+        </li>
+        <li class="footer-oneLi">
+            帮助中心
+            <ul class="footer-twoUl">
+                <li class="footer-twoLi">
+                    <a href="#">如何写作</a>
+                </li>
+                <li class="footer-twoLi">
+                    <a href="#">如何联系书法</a>
+                </li>
+                <li class="footer-twoLi">
+                    <a href="#">如何评测</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="footer-text">
+        <li class="liborder">
+            <a href="#">平台微博</a>
+        </li>
+        <li class="liborder">
+            <a href="#">平台公众号</a>
+        </li>
+        <li>
+            <a href="#">意见反馈</a>
+        </li>
+    </ul>
+    <p>XXXXXXXXXXXXXXXXX DEVELOPMENT CO LTD INC. 2018© ALL RIGHTS RESERVED</p>
+</footer>
+<script src="../assets/layui/layui.js"></script>
+<script src="../assets/jq/jquery.min.js"></script>
+<script type="text/javascript" src="../js/register.63f9712.js"></script>
+
+<script type="text/javascript">
+
+
+   $("#myform").submit(function (envent)
+   {
+    envent.preventDefault();
+
+    
+
+
+    var form = $(this);
+
+
+    $.ajax({
+        url: "http://172.16.9.77:8080/users/register",
+        type: "get",
+        data: form.serialize(),
+        dataType: "json",
+        success: function (data)
+        {
+
+
+            if(data.code == 0){//登陆成功
+
+
+            alert(data.msg)
+
+             
+             window.location.href='./login.html';
+
+
+         }else{
+            alert(data.msg)
+       }
+
+   },
+   error:function(e){
+
+    alert("错误！！"+e);
+
+}
+});
+});
+</script>
+
+
+
+</script>
+
+
+</body>
+
+</html>

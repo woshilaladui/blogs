@@ -1,0 +1,78 @@
+.corpusSreach {
+    text-align: center;
+    width: 1200px;
+    margin-top: 50px;
+}
+
+.corpusSreach input {
+    width: 365px;
+    height: 48px;
+    border-radius: 50px;
+    border: none;
+    color: #8c8c8c;
+    border: 1px solid #c9c9c9;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.corpusSreach button {
+    width: 112px;
+    height: 48px;
+    border-radius: 50px;
+    border: none;
+    border: 1px solid #c9c9c9;
+    background: #fff;
+    cursor: pointer;
+    color: #8c8c8c;
+}
+
+.corpusContent {
+    width: 1200px;
+    text-align: center;
+    margin-top: 50px;
+}
+.corpusContent .title span {
+    font-size: 18px;
+    border-bottom: 1px solid #73be59;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.corpusContent .corpusButton {
+    float: right;
+    margin-top: 20px;
+    width: 70px;
+    background: #fff;
+    border: none;
+    border: 1px solid #c9c9c9;
+    border-radius: 50px;
+    height: 30px;
+    cursor: pointer;
+    color:#8c8c8c;
+    margin-bottom: 45px;
+}
+
+
+.corpusContent ul  {
+    width: 100%;
+    padding: 0;
+}
+
+.corpusContent ul li {
+    padding: 25px 15px !important;
+    width: 100%;
+}   
+.corpusContent ul li a span {
+    float: left;
+    color:#42abff;
+}
+
+.porpus-bototm {
+    margin-top: 50px;
+    width: 1200px;
+    text-align: center;
+}
+.searh-left-content {
+    width: 1200px !important;
+}
